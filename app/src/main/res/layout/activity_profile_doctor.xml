@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/face"
+    tools:context="com.example.raniamofeed.project_androidfci.ProfileDoctor">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/tool"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/relativeLayout2"
+        android:layout_marginTop="12dp"
+        android:text=" Profile Doctors"
+        android:textSize="22dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:numStars="1" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/ratingBar3"
+        android:background="#00000000"
+        app:srcCompat="@drawable/like2" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton3"
+        android:layout_marginEnd="11dp"
+        android:layout_toStartOf="@+id/imageButton3"
+        android:background="#00000000"
+        app:srcCompat="@drawable/search2" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="9dp"
+        android:id="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/user64"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Doctor mohammed"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            tools:layout_editor_absoluteY="29dp"
+            android:textColor="@color/tool"
+            android:background="#00000000"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/tool"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Evalution" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:background="@color/tool"
+       />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageButton3"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="12dp"
+        android:text="Select Your Item:"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/relativeLayout2"
+        android:layout_alignTop="@+id/tv"
+        android:layout_marginStart="18dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="Date:-" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll1"
+        android:layout_marginTop="220dp"
+        android:focusableInTouchMode="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="7:00 PM"
+                    android:textColor="#fff"
+                    android:background="@drawable/border3"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="6:30 PM"
+                    android:textColor="#fff"
+                    android:background="@drawable/border3"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/b6"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="6:00 PM"
+                    android:textColor="#fff"
+                    android:background="@drawable/border3"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+                <Button
+                    android:id="@+id/bb4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="8:30 PM"
+                    android:textColor="#fff"
+                    android:background="@drawable/border3"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/bb5"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="8:00 PM"
+                    android:textColor="#fff"
+                    android:background="@drawable/border3"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/bb6"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="7:30 PM"
+                    android:textColor="#fff"
+                    android:background="@drawable/border3"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="2dp">
+                <Button
+                    android:id="@+id/found"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Book"
+                    android:textColor="#fff"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tool"></LinearLayout>
+            <TabHost
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ta"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="114dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:background="#FF93B4E9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/tab1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+        <android.support.v4.widget.NestedScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/user64"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Mohammed Ahmmed"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/sp3"
+                                            android:textColor="@color/tool"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/cash"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Detection rate :50 LE"
+                                            android:paddingLeft="22dp"
+                                            android:textColor="@color/tool"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/spp3"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/diploma"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Professor"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/sp4"
+                                            android:paddingLeft="22dp"
+                                            android:textColor="@color/tool"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="300dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/smartphone"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="01286576899"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/tool"
+                                            android:id="@+id/sp"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"/>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/locked"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="01286576899"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/rr"
+                                            android:textColor="@color/tool"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/mail"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="mohammed@gmail.com"
+                                            android:textColor="@color/tool"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/ee"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/stethoscope"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Doctor of Dentist"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/tool"
+                                            android:id="@+id/ii"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/weekly"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Tue,Web"
+                                            android:textColor="@color/tool"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/ii2"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/cl"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="From 6 PM to 11 PM"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/ii3"
+                                            android:textColor="@color/tool"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/hospital"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Case :clinic"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/ii4"
+                                            android:textColor="@color/tool"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/cl"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="waiting 30M"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/ii5"
+                                            android:textColor="@color/tool"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.5dp"
+                                        android:background="#5fff"></LinearLayout>
+
+                                </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/tabb"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+        <android.support.v4.widget.NestedScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:id="@+id/tab2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/placeholder"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="6th of October : 1st District 1st Neighborhood Building No 194 One floor above the libraries of Egypt next to Ahmed Maher Pharmacy and University market"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/sri"
+                                            android:paddingLeft="22dp"
+                                            android:textColor="@color/tool"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/stethoscope"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text=" Services of Dr :Dental implants - Children's teeth - Dentistry - Take off wisdom tooth - Vener - Nerve stuffing - Crown - Orthodontics - Teeth whitening
+"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/si"
+                                            android:paddingLeft="22dp"
+                                            android:textColor="@color/tool"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="16dp">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/heartbeat"
+                                            android:layout_gravity="center"/>
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Dentist specialized in adult teeth, teeth teeth, filler and treatment of roots and nerves, dental implants, dental implants, face and jaw surgery, gum treatment, dental implants, more ..."
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/s"
+                                            android:textColor="@color/tool"
+                                            android:paddingLeft="22dp"
+                                            android:textDirection="ltr"
+                                            android:layout_weight="1" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bacground">#E9EBEE</color>
+    <color name="bouttom">#82a6a9</color>
+    <color name="face">#e5e7ec</color>
+    <color name="tool">#21324D</color>
+    <color name="text">#a0e5e7ec</color>
+
+</resources>
+

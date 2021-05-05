@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.raniamofeed.project_androidfci.Forget_Pass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="60dp"
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                app:srcCompat="@drawable/lockedf"
+                android:background="#00000000"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="122dp">
+        <TextView
+            android:text="@string/f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lo"
+            android:textColor="@color/face"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:text="@string/f2"
+            android:textColor="@color/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lo3"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:text="@string/f3"
+            android:textColor="@color/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lo4"
+            android:layout_marginTop="40dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="50dp"
+        android:layout_marginTop="230dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/user"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail Address"
+            android:textColorHint="@color/text"
+            android:layout_marginLeft="15dp"
+            android:background="#00000000"
+            android:letterSpacing="0.1"
+            android:textSize="16dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >
+        <Button
+            android:id="@+id/logiin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f5"
+            android:textColor="#fff"
+            android:background="@drawable/border"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="19dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

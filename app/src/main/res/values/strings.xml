@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Project_androidFCI</string>
+    <string name="na">Doctors_App</string>
+    <string name="na2">.com</string>
+    <string name="na3">Book the Best Doctor in two minutes</string>
+    <string name="f1">Forget Password..?</string>
+    <string name="f2">We  just need your register email address</string>
+    <string name="f3">to send your password reset</string>
+    <string name="f4">E-mail address</string>
+    <string name="f5">Reset password</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="te">E7GEZLY</string>
+    <string name="pass">Forget Password</string>
+    <string name="te2">Dentisty-Professor</string>
+    <string name="d2">Examination Fee 100LE</string>
+    <string name="d3">El-Zamalek</string>
+    <string name="d4">Book Today</string>
+    <string name="d5">Book Tommorrow</string>
+    <string name="d6">All Appointments</string>
+
+
+    <string-array name="Specialization">
+        <item>Specialization</item>
+        <item>veterinary</item>
+        <item>Dentist</item>
+        <item>veterinary</item>
+        <item>Dentist</item>
+    </string-array>
+    <string-array name="Range">
+        <item>Range Of Cost</item>
+        <item>50:to:100</item>
+        <item>100:to:150</item>
+        <item>150:to :200</item>
+    </string-array>
+    <string-array name="Scientific">
+        <item>Scientific certificate</item>
+        <item>Master</item>
+        <item>Doctora</item>
+        <item>Professor</item>
+    </string-array>
+    <string-array name="Area">
+        <item>Area</item>
+        <item>Egypt</item>
+        <item>Assuan</item>
+        <item>Assuit</item>
+    </string-array>
+    <string-array name="Lan">
+        <item>Language</item>
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+    <string-array name="No">
+        <item>Notification/Hour</item>
+        <item>3H</item>
+        <item>6H</item>
+    </string-array>
+    <string name="title_activity_result_search">ResultSearch</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="rina">For create your account in our APP</string>
+    <string name="rina1">Plasse send to us your E-Mail to contect with you</string>
+    <string name="rina2">for more security in doctor regestration</string>
+
+
+</resources>
